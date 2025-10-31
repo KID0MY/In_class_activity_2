@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_URP_LightingWithTransparency
-  m_Shader: {fileID: 4800000, guid: b408c6823c1af224b8d3b0cc11af33b7, type: 3}
+  m_Name: Custom_URP_EnhancedHologram
+  m_Shader: {fileID: 4800000, guid: cc7c953fd1a871e4391b40f2a9ff63ee, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,12 +24,18 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 47838e6053bb7e543bff1115ae6636ed, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _FresnelPower: 2.68
+    - _LineFrequency: 100
+    - _LineSpeed: 20
+    - _RimIntensity: 15
+    - _Transparency: 0.223
     m_Colors:
-    - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 0, g: 0.8, b: 1, a: 1}
+    - _LineColor: {r: 0, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
